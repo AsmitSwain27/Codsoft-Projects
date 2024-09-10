@@ -92,8 +92,6 @@ header {
 .search {
     width: 30%;
     padding: 0.5rem 0;
-    /* border-bottom: 4px solid var(--extra-light); */
-    /* color: var(--extra-light); */
     font-weight: 400;
     font-size: medium;
     background-color: transparent;
@@ -231,5 +229,4 @@ footer {
     color: #ffffff;
     background-color: transparent;
     backdrop-filter: blur(5px);
-
 }
