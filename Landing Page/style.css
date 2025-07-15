@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --color: #008080;
+    --text: #ffffff;
+    --extra-light: #ffdc9b;
+    --max-width: 1100px;
+}
+
+a {
+    text-decoration: none;
+}
+
+input::placeholder {
+    color: var(--extra-light);
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
+        url("bg img.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Header */
+
+header {
+    background-color: transparent;
+    backdrop-filter: blur(10px);  
+    color: var(--text);
+    padding: 0 4.8rem;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+}
+
+.logo {
+    position: relative;
+    top: 13px;
+    margin-top: 5%;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+    color: var(--extra-light);
+}
+
+.nav-links {
+    position: relative;
+    left: 65%;
+    bottom: 20px;
+}
+
+.nav-links .nav_links {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3rem;    
+}
+
+.nav-links .nav_links .link {
+    font-size: 1.3rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.nav_links li a {
+    color: var(--extra-light);
+}
+
+.nav_links li a:hover {
+    color: #ffa600;
+    /* text-shadow: #008080 10px; */
+}
+
+.search {
+    width: 30%;
+    padding: 0.5rem 0;
+    /* border-bottom: 4px solid var(--extra-light); */
+    /* color: var(--extra-light); */
+    font-weight: 400;
+    font-size: medium;
+    background-color: transparent;
+    outline: none;
+    border: none;
+}
+
+.seachbar {
+    position: relative;
+    left: 1050px;
+    bottom: 47px;
+}
+
+/* Main Section */
+
+.section {
+    display: flex;
+    min-height: 100vh;
+    max-width: var(--max-width);
+    margin: auto;
+    margin-top: 3rem;
+    padding: 3rem;
+    position: relative;
+}
+
+.left,
+.right {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.left {
+    max-width: 400px;
+    display: grid;
+    gap: 1rem;
+}
+
+.left h1 {
+    font-size: 4rem;
+    line-height: 4rem;
+    color: var(--extra-light);
+    font-weight: 700;
+}
+
+.left p {
+    color: rgb(242, 233, 215);
+    background-color: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    text-align: justify;
+    font-weight: 600;
+    font-size: 16px;
+    padding: 5px;
+    margin: 5px;
+}
+
+.left button {
+    padding: 0.5rem 2rem;
+    color: var(--extra-light);
+    font-size: 1rem;
+    background-color: transparent;
+    outline: none;
+    border: 2px solid var(--extra-light);
+    border-radius: 2rem;
+    cursor: pointer;
+}
+
+h3 {
+    font-size: 2rem;
+    color: var(--text);
+}
+
+/* Form */
+
+.right {
+    justify-content: flex-end;
+}
+
+form {
+    width: 350px;
+    display: grid;
+    border-radius: 10px;
+    background-color: transparent;
+    color: var(--extra-light);
+    backdrop-filter: blur(7px);
+}
+
+form h3 {
+    font-size: 2.3rem;
+    font-weight: 700;
+    padding: 2rem;
+}
+
+.form-group {
+    display: grid;
+    padding: 0 2rem;
+    margin-bottom: 1rem;
+}
+
+.form-group input {
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--extra-light);
+    background-color: transparent;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid var(--extra-light);
+}
+
+form button {
+    margin-top: 1rem;
+    padding: 1rem;
+    font-size: 1.25rem;
+    font-weight: 500;
+    outline: none;
+    border: none;
+    border-radius: 0px 0px 10px 10px;
+    background-color: #008080;
+    color: var(--extra-light);
+    cursor: pointer;
+}
+
+/* Footer section */
+
+footer {
+    position: relative;
+    bottom: 0;
+    height: 3.5rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: transparent;
+    backdrop-filter: blur(5px);
+
+}
